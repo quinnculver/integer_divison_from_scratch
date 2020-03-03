@@ -1,0 +1,14 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+def divide(self, dividend: int, divisor: int) -> int:
+        quotient = 1
+        current_multiple = divisor
+        if divisor  > dividend:
+            return 0
+        else:
+            while current_multiple < dividend:
+                current_multiple += divisor
+                quotient += 1
+return quotient
+
